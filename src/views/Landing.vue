@@ -3,7 +3,7 @@
     <parallax class="section page-header header-filter" :style="headerStyle">
       <div class="container">
         <div class="md-layout">
-          <div
+          <!-- <div
             class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
           >
             <h1 class="title">Your Story Starts With Us.</h1>
@@ -20,7 +20,7 @@
               target="_blank"
               ><i class="fas fa-play"></i> Watch video</md-button
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </parallax>

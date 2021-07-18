@@ -8,7 +8,7 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">Vue Material Kit</h3>
+        <h3 class="md-title">NFT Marketplace</h3>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -69,7 +69,7 @@
                 v-if="showDownload"
               >
                 <i class="material-icons">content_paste</i>
-                <p>Documentation</p>
+                <p>Documentationation</p>
               </md-list-item>
 
               <md-list-item
@@ -146,7 +146,7 @@
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
-                <p class="hidden-lg">Instagram</p>
+                <p>Instagram</p>
                 <md-tooltip md-direction="bottom"
                   >Follow us on Instagram</md-tooltip
                 >
