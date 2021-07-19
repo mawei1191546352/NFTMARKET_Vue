@@ -21,8 +21,30 @@
             </div>
           </div>
           <div class="md-layout-item md-size-20">
-            <div class="title">
-              <h3>Search and Filter</h3>
+            <div class="container">
+              <div class="title">
+                <h3>Search</h3>
+              </div>
+              <md-field class="md-form-group" slot="inputs">
+                <md-icon>search</md-icon>
+                <label>Search...</label>
+                <md-input
+                  v-model="searchtxt"
+                  type="text"
+                ></md-input>
+              </md-field>
+              <div class="title">
+                <h3>Filter</h3>
+              </div>
+              <md-checkbox v-model="array" value="1">Mostly</md-checkbox>
+              <md-checkbox v-model="array" value="2">Recently</md-checkbox>
+              <md-checkbox v-model="array" value="2">Oldest</md-checkbox>
+              <md-checkbox v-model="array" value="2">Sort</md-checkbox>
+              <div class="action">
+                <md-button class="md-round md-sm md-success md-lg">
+                  Search
+                </md-button>
+              </div>
             </div>
           </div>
           <div class="md-layout-item md-size-80">
@@ -67,7 +89,8 @@ export default {
   },
   data() {
     return {
-      leafShow: false
+      leafShow: false,
+      searchtxt: "",
     }
   },
   computed: {

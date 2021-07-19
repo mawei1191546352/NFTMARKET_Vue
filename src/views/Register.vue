@@ -12,9 +12,9 @@
                 <md-icon>face</md-icon>
                 <label>Full Name ...</label>
                 <md-input
-                  v-model="email"
-                  type="email"
-                  aria-required="email"
+                  v-model="fullname"
+                  type="text"
+                  aria-required="fullname"
                   required
                 ></md-input>
               </md-field>
