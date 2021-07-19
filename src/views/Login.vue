@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper login-wrapper">
     <div class="section page-header header-filter" :style="headerStyle">
       <div class="container">
         <div class="md-layout">
@@ -8,44 +8,22 @@
           >
             <login-card header-color="green">
               <h4 slot="title" class="card-title">Login</h4>
-              <md-button
-                slot="buttons"
-                href="javascript:void(0)"
-                class="md-just-icon md-simple md-white"
-              >
-                <i class="fab fa-facebook-square"></i>
-              </md-button>
-              <md-button
-                slot="buttons"
-                href="javascript:void(0)"
-                class="md-just-icon md-simple md-white"
-              >
-                <i class="fab fa-twitter"></i>
-              </md-button>
-              <md-button
-                slot="buttons"
-                href="javascript:void(0)"
-                class="md-just-icon md-simple md-white"
-              >
-                <i class="fab fa-google-plus-g"></i>
-              </md-button>
-              <p slot="description" class="description">Or Be Classical</p>
-              <md-field class="md-form-group" slot="inputs">
-                <md-icon>face</md-icon>
-                <label>First Name...</label>
-                <md-input v-model="firstname"></md-input>
-              </md-field>
               <md-field class="md-form-group" slot="inputs">
                 <md-icon>email</md-icon>
                 <label>Email...</label>
-                <md-input v-model="email" type="email"></md-input>
+                <md-input
+                  v-model="email"
+                  type="email"
+                  aria-required="email"
+                  required
+                ></md-input>
               </md-field>
               <md-field class="md-form-group" slot="inputs">
                 <md-icon>lock_outline</md-icon>
                 <label>Password...</label>
-                <md-input v-model="password"></md-input>
+                <md-input type="password" v-model="password"></md-input>
               </md-field>
-              <md-button slot="footer" class="md-simple md-success md-lg">
+              <md-button slot="footer" class="md-round md-success md-lg">
                 Get Started
               </md-button>
             </login-card>
@@ -87,4 +65,8 @@ export default {
 };
 </script>
 
-<style lang="css"></style>
+<style lang="css">
+.login-wrapper {
+  height: 100vh;
+}
+</style>

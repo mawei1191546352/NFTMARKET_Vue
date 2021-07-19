@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <parallax  class="page-header header-filter" :style="headerStyle">
+    <parallax class="page-header header-filter" :style="headerStyle">
       <div class="md-layout">
         <div class="md-layout-item">
           <div class="image-wrapper">
@@ -13,12 +13,22 @@
       </div>
     </parallax>
     <div class="main main-raised">
-      <div class="section section-basic">
-         <div class="container">
-          <div class="title">
-            <h2>Basic Elements</h2>
+      <div class="section">
+        <div class="md-layout md-gutter market-layout">
+          <div class="md-layout-item md-size-100">
+            <div class="title container">
+              <h1>NFT Market Items</h1>
+            </div>
           </div>
-          <basic-elements></basic-elements>
+          <div class="md-layout-item md-size-20">
+            <div class="title">
+              <h3>Search and Filter</h3>
+            </div>
+          </div>
+          <div class="md-layout-item md-size-80">
+            <market-list></market-list>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -26,10 +36,10 @@
 </template>
 
 <script>
-import BasicElements from "./components/BasicElementsSection";
+import MarketList from "./marketcomponent/MarketList";
 export default {
   components: {
-    BasicElements,
+    MarketList
   },
   name: "index",
   bodyClass: "index-page",
@@ -37,7 +47,7 @@ export default {
     image: {
       type: String,
       default: require("@/assets/img/vue-mk-header.jpg")
-    },
+    }
   },
   computed: {
     headerStyle() {
@@ -47,11 +57,10 @@ export default {
     }
   },
   mounted() {
-    this.leafActive();
+    // this.leafActive();
     window.addEventListener("resize", this.leafActive);
-  },
-
-}
+  }
+};
 </script>
 
 <style lang="scss">
@@ -61,9 +70,14 @@ export default {
   }
 }
 
-@media all and (min-width: 991px) {
-  .btn-container {
-    display: flex;
-  }
+.market-layout {
+  margin: 0 !important;
 }
+
+
+// @media all and (min-width: 991px) {
+//   .btn-container {
+//     display: flex;
+//   }
+// }
 </style>

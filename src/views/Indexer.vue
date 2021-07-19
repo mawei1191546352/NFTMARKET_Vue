@@ -179,9 +179,9 @@
                   href="https://themeisle.com/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
                   target="_blank"
                   >ThemeIsle</a
-                >templateed
-                created a Wordpress Theme which can be also downloaded for free.
-                Start a new project or give an old Bootstrap project a new look!
+                >templateed created a Wordpress Theme which can be also
+                downloaded for free. Start a new project or give an old
+                Bootstrap project a new look!
               </h4>
             </div>
             <div class="md-layout-item md-size-50 md-small-size-100 mx-auto">

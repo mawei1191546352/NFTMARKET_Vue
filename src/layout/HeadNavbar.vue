@@ -30,33 +30,23 @@
             </mobile-menu>
 
             <md-list>
-              <md-list-item
-                href="/#"
-              >
+              <md-list-item href="/#">
                 <i class="material-icons">shop</i>
                 <p>Marketplace</p>
               </md-list-item>
-              <md-list-item
-                href="/#"
-              >
+              <md-list-item href="/#/about">
                 <i class="material-icons">content_paste</i>
                 <p>About</p>
               </md-list-item>
-              <md-list-item
-                href="/#"
-              >
+              <md-list-item href="/#">
                 <i class="material-icons">help</i>
                 <p>Faq</p>
               </md-list-item>
-              <md-list-item
-                href="/#"
-              >
+              <md-list-item href="/#/login">
                 <i class="material-icons">login</i>
                 <p>Login</p>
               </md-list-item>
-              <md-list-item
-                href="/#"
-              >
+              <md-list-item href="/#">
                 <i class="material-icons">person_add</i>
                 <p>Regist</p>
               </md-list-item>
@@ -64,7 +54,7 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
   </md-toolbar>
 </template>
 
@@ -113,8 +103,8 @@ export default {
   data() {
     return {
       extraNavClasses: "",
-      toggledClass: false,
-    }
+      toggledClass: false
+    };
   },
   methods: {
     bodyClick() {
@@ -168,5 +158,5 @@ export default {
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
   }
-}
+};
 </script>
