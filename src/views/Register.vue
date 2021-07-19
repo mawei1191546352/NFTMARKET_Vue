@@ -7,7 +7,17 @@
             class="md-layout-item md-size-33 md-small-size-66 md-xsmall-size-100 md-medium-size-40 mx-auto"
           >
             <login-card header-color="green">
-              <h4 slot="title" class="card-title">Login</h4>
+              <h4 slot="title" class="card-title">Regist</h4>
+              <md-field class="md-form-group" slot="inputs">
+                <md-icon>face</md-icon>
+                <label>Full Name ...</label>
+                <md-input
+                  v-model="email"
+                  type="email"
+                  aria-required="email"
+                  required
+                ></md-input>
+              </md-field>
               <md-field class="md-form-group" slot="inputs">
                 <md-icon>email</md-icon>
                 <label>Email...</label>
@@ -24,7 +34,7 @@
                 <md-input type="password" v-model="password"></md-input>
               </md-field>
               <md-button slot="footer" class="md-round md-success md-lg">
-                Login
+                Get Started
               </md-button>
             </login-card>
           </div>
@@ -41,10 +51,10 @@ export default {
   components: {
     LoginCard
   },
-  bodyClass: "login-page",
+  bodyClass: "register-page",
   data() {
     return {
-      firstname: null,
+      fullname: null,
       email: null,
       password: null
     };

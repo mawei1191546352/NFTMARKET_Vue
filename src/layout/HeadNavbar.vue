@@ -8,9 +8,9 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h2 class="md-title">
+        <h1 class="md-title">
           NFT Marketplace
-        </h2>
+        </h1>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -30,7 +30,7 @@
             </mobile-menu>
 
             <md-list>
-              <md-list-item href="/#">
+              <md-list-item href="/#/">
                 <i class="material-icons">shop</i>
                 <p>Marketplace</p>
               </md-list-item>
@@ -46,7 +46,7 @@
                 <i class="material-icons">login</i>
                 <p>Login</p>
               </md-list-item>
-              <md-list-item href="/#">
+              <md-list-item href="/#/register">
                 <i class="material-icons">person_add</i>
                 <p>Regist</p>
               </md-list-item>

@@ -47,6 +47,27 @@ export default {
     image: {
       type: String,
       default: require("@/assets/img/vue-mk-header.jpg")
+    },
+    leaf4: {
+      type: String,
+      default: require("@/assets/img/leaf4.png")
+    },
+    leaf3: {
+      type: String,
+      default: require("@/assets/img/leaf3.png")
+    },
+    leaf2: {
+      type: String,
+      default: require("@/assets/img/leaf2.png")
+    },
+    leaf1: {
+      type: String,
+      default: require("@/assets/img/leaf1.png")
+    },
+  },
+  data() {
+    return {
+      leafShow: false
     }
   },
   computed: {
@@ -57,7 +78,6 @@ export default {
     }
   },
   mounted() {
-    // this.leafActive();
     window.addEventListener("resize", this.leafActive);
   }
 };
