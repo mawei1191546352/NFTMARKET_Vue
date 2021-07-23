@@ -38,11 +38,11 @@
               </div>
               <md-checkbox v-model="array" value="1">Mostly</md-checkbox>
               <md-checkbox v-model="array" value="2">Recently</md-checkbox>
-              <md-checkbox v-model="array" value="2">Oldest</md-checkbox>
-              <md-checkbox v-model="array" value="2">Sort</md-checkbox>
+              <md-checkbox v-model="array" value="3">Oldest</md-checkbox>
+              <md-checkbox v-model="array" value="4">Sort</md-checkbox>
               <div class="action">
                 <md-button class="md-round md-sm md-success md-lg">
-                  Search
+                  Search & Filter
                 </md-button>
               </div>
             </div>
