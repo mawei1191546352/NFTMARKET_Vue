@@ -4,6 +4,7 @@ import Index from "./views/Index.vue";
 import Indexer from "./views/Indexer.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
+import Itemview from "./views/Itemview.vue";
 import Register from "./views/Register";
 import Profile from "./views/Profile.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
@@ -18,6 +19,15 @@ export default new Router({
       path: "/",
       name: "index",
       components: { default: Index, header: HeadNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/itemview/{id}",
+      name: "itemview",
+      components: { default: Itemview, header: HeadNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }

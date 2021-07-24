@@ -33,6 +33,16 @@
                 <label>Password...</label>
                 <md-input type="password" v-model="password"></md-input>
               </md-field>
+              <md-field class="md-form-group" slot="inputs">
+                <md-icon>filter</md-icon>
+                <label>Wallet ...</label>
+                <md-input
+                  v-model="fullname"
+                  type="text"
+                  aria-required="fullname"
+                  required
+                ></md-input>
+              </md-field>
               <md-button slot="footer" class="md-round md-success md-lg">
                 Get Started
               </md-button>
